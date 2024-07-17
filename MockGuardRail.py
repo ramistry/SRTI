@@ -21,7 +21,7 @@ async def get_chat_response(user_request):
     print("Got LLM response")
     return response["choices"][0]["message"]["content"]
 
-# Mock function 
+
 async def topical_guardrail(user_request):
     print("Checking topical guardrail")
     messages = [
